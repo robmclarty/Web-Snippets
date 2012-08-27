@@ -26,7 +26,7 @@ working for the modal content rather than continuing to work on the base content
 
 ### Static Modal Window
 
-![Static Modal Window Screenshot](http://robmclarty.com/screenshots/modal-scrollable.png)
+![Static Modal Window Screenshot](http://robmclarty.com/screenshots/modal-static.png)
 
 Much like the scrollable modal window, only for small messages that don't require
 scrolling. Because no scrolling is needed, we can do other fancy things like blur out
