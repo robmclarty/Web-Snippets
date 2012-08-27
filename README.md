@@ -16,6 +16,8 @@ R
 
 ### Scrollable Modal Window
 
+![Scrollable Modal Window Screenshot](screenshots/modal-scrollable.png)
+
 Uses jQuery, CSS, HTML5, and Mustache templates to load a modal window ontop of the base
 HTML content using data passed in from JSON. This is meant to emulate the functionality
 of Pinterest's modal windows such that the base HTML content can scroll, but then freeze
@@ -23,6 +25,8 @@ while the modal window scrolls on top of it (i.e., the scroll-wheel of the mouse
 working for the modal content rather than continuing to work on the base content).
 
 ### Static Modal Window
+
+![Static Modal Window Screenshot](screenshots/modal-scrollable.png)
 
 Much like the scrollable modal window, only for small messages that don't require
 scrolling. Because no scrolling is needed, we can do other fancy things like blur out
