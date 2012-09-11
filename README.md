@@ -37,3 +37,11 @@ These two modal window
 solutions are very simplified but could easily be adapted to be included in a more
 sophisticated setup like Backbone or something. I've not used a bigger framework
 here in order to focus solely on the modal functionality itself.
+
+### Fullscreen Background Image Resize + Center
+
+![Fullscreen Background Image Resize + Center Screenshot](http://robmclarty.com/screenshots/fullscreen-background-resize.png)
+
+Apply a full-viewport background image that resizes and centers itself to optimally
+cover the viewport with the image while layering a separate content container ontop
+using jQuery on the `$(window).resize()` event.
