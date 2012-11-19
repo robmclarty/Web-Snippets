@@ -45,3 +45,15 @@ here in order to focus solely on the modal functionality itself.
 Apply a full-viewport background image that resizes and centers itself to optimally
 cover the viewport with the image while layering a separate content container ontop
 using jQuery on the `$(window).resize()` event.
+
+### Mobile Menu
+
+![Mobile Menu Screenshot](http://robmclarty.com/screenshots/mobile-menu.png)
+
+A possible "hidden" menu system for use in mobile web contexts built with 
+jQuery + CSS3 transitions. Imagine one of those 3-lined-icons for toggling a menu
+off and on so you can save valuable real estate in a constrained mobile view. I've
+used "overflow-x: hidden" on the body to prevent horizontal scrolling when the content
+gets shoved over while maintaining the main scrollbar to use for moving the content
+up and down, however this doesn't allow for scrolling in the menu area which may be
+an issue if the menu gets vertically taller than the viewport.

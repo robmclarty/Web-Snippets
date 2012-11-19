@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Mobile Menu Template</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      #hidden-menu {
+        padding: 20px;
+        width: 210px;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: #666;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 1;
+      }
+      #hidden-menu ul li {
+        margin-bottom: 10px;
+      }
+      #hidden-menu a {
+        color: #eee;
+      }
+      #page-content {
+        min-height: 100%;
+        z-index: 2;
+        position: relative;
+        background: #fff;
+        margin: 0;
+        padding: 40px;
+        -webkit-transition: all 0.2s ease-in-out;
+           -moz-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+             -o-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+      }
+      .page-moved {
+        -webkit-transform: translate(250px, 0);
+           -moz-transform: translate(250px, 0);
+            -ms-transform: translate(250px, 0);
+             -o-transform: translate(250px, 0);
+                transform: translate(250px, 0);
+        -webkit-transition: all 0.2s ease-in-out;
+           -moz-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+             -o-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hidden-menu">
+      <h3>Hidden Menu</h3>
+      <ul>
+        <li><a href="#">Example Link</a></li>
+        <li><a href="#">Example Link</a></li>
+        <li><a href="#">Example Link</a></li>
+        <li><a href="#">Example Link</a></li>
+        <li><a href="#">Example Link</a></li>
+      </ul>
+    </div>
+    <div id="page-content" class="">
+      <header>
+        <a href="#" id="menu-toggle">Toggle Menu</a>
+      </header>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dapibus rutrum mauris ac viverra. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tristique feugiat aliquam. Donec et ipsum eget magna suscipit egestas vitae a ante. Morbi volutpat lectus vitae orci convallis blandit. Aliquam eros sapien, faucibus vel mollis convallis, rutrum vel odio. Aenean non turpis enim, non pulvinar tortor. Proin ipsum purus, imperdiet at condimentum et, pellentesque at orci. Donec ut tellus purus. Fusce ut consequat eros.
+        </p>
+        <p>
+          Cras sit amet elit est, at ornare nisi. Nullam in tortor felis, et mollis elit. Morbi imperdiet mi quis nunc ullamcorper id accumsan purus venenatis. Nunc lacus elit, accumsan fringilla dignissim sed, scelerisque nec purus. Aenean rutrum, dolor semper elementum adipiscing, elit nulla congue elit, faucibus condimentum nisl elit vitae tellus. Suspendisse vitae elit a purus ullamcorper consequat. Vestibulum sed nunc leo, at pulvinar tortor. Etiam at sodales lacus. Ut quam elit, pharetra suscipit ultrices in, mollis eu sem. Curabitur ac leo sapien, ut aliquam lacus. Phasellus quam lectus, molestie ac porta sit amet, dapibus in mauris. Etiam aliquet dignissim risus, non euismod sapien viverra bibendum. Integer congue risus nec urna elementum in commodo nunc venenatis.
+        </p>
+        <p>
+          Fusce posuere dui porta ipsum egestas pellentesque. Duis semper purus id lectus vehicula dignissim. Morbi hendrerit euismod odio, nec vehicula sapien bibendum vel. Vivamus gravida pharetra nisi ac hendrerit. Suspendisse potenti. Ut ullamcorper hendrerit risus, at consectetur augue tempus nec. Nullam vel urna diam. In luctus est nec leo ullamcorper tempor. Maecenas a tellus quis urna suscipit tempus a in nisl. Curabitur sit amet augue dui, non sagittis magna. Praesent tempor, dui quis consectetur scelerisque, justo felis vehicula dui, eu dictum mauris lectus at risus. Nam vel fermentum augue. Nunc sit amet orci tortor. Nunc vitae fermentum velit. Phasellus in est quis nisi pharetra varius in eu libero.
+        </p>
+        <p>
+          Pellentesque sed tempor risus. Morbi porttitor viverra tempus. Sed vehicula elit ut magna sagittis malesuada ac non justo. Praesent pretium elit nec orci gravida vitae consectetur purus gravida. Proin auctor lobortis lacus, vel luctus turpis lobortis vel. Fusce sodales pretium adipiscing. Pellentesque vestibulum sodales neque, ut porta diam pretium sit amet. Nullam ut nunc erat. Nulla odio ligula, blandit et aliquet quis, scelerisque eu odio. Nunc posuere mollis odio eget ornare. Nullam eget mi odio, nec adipiscing eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non semper massa.
+        </p>
+        <p>
+          Vestibulum ac velit eros. Suspendisse sit amet nisl vel enim gravida lacinia. Maecenas ultrices, felis a aliquet lacinia, magna ipsum sagittis sapien, molestie dignissim urna metus vitae odio. Donec dignissim accumsan ullamcorper. Ut sed nunc a velit viverra mollis. Integer luctus, orci eu imperdiet ultricies, dui nulla pretium nunc, eget condimentum metus turpis ut dui. Aenean blandit ligula dapibus velit placerat id commodo erat feugiat. Nam nec lectus mauris. Curabitur feugiat tortor vel arcu convallis a pulvinar odio faucibus. Proin lorem ipsum, iaculis eget fringilla quis, scelerisque eu leo.
+        </p>
+      </div>
+    </div>
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#menu-toggle').click(function() {
+          if ($('#page-content').hasClass('page-moved')) {
+            $('#page-content').removeClass('page-moved');
+          } else {
+            $('#page-content').addClass('page-moved');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
