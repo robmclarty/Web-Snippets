@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Co-op Cabs</title>
+    <link href="stylesheets/normalize.css" media="all" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      body {
+        overflow: hidden;
+      }
+      #hidden-left,
+      #hidden-right {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 250px;
+        background: #666;
+        /*display: none;*/
+      }
+      #hidden-left {
+        z-index: 1;
+        left: 0;
+      }
+      #hidden-right {
+        z-index: 2;
+        right: 0;
+      }
+
+      #main-body {
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        -webkit-transition: all 0.2s ease-in-out;
+           -moz-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+             -o-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+      }
+
+      #global-header {
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        padding: 5px;
+        background: #ccc;
+      }
+      #content {
+        z-index: 10;
+        position: absolute;
+        top: 50px;  /* Same as global-header height + padding */
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 40px;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      #toggle-left,
+      #toggle-right,
+      #toggle-main-body {
+        display: block;
+        font-size: 0;
+        padding: 0;
+        margin: 0;
+      }
+      #toggle-left {
+        float: left;
+      }
+      #toggle-right {
+        float: right;
+      }
+      #toggle-main-body {
+        z-index: 9999;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+        background-color: rgba(255, 255, 255, .5);
+      }
+      #toggle-main-body.visible {
+        display: block;
+      }
+
+      body.left-menu #main-body {
+        -webkit-transform: translate(250px, 0);
+           -moz-transform: translate(250px, 0);
+            -ms-transform: translate(250px, 0);
+             -o-transform: translate(250px, 0);
+                transform: translate(250px, 0);
+      }
+      body.right-menu #main-body {
+        -webkit-transform: translate(-250px, 0);
+           -moz-transform: translate(-250px, 0);
+            -ms-transform: translate(-250px, 0);
+             -o-transform: translate(-250px, 0);
+                transform: translate(-250px, 0);
+      }
+    </style>    
+  </head>
+  <body>
+    <section id="main-body">
+      <header id="global-header">
+        <a href="#" id="toggle-left"><img src='images/button-menu.png' width="32" height="32"></a>
+        <a href="#" id="toggle-right"><img src='images/button-menu.png' width="32" height="32"></a>
+      </header>
+
+      <article id="content">
+        <header>
+          <h1>Page Title</h2>
+        </header>
+
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis rutrum vestibulum. Maecenas eu velit nec risus aliquet tincidunt ac sit amet sem. Aliquam erat volutpat. Sed placerat nisi risus. Donec at tellus arcu. Proin dapibus ullamcorper commodo. In eget magna non erat euismod convallis.
+        </p><p>
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce nisl nisi, elementum non elementum in, pharetra a ipsum. Morbi egestas dolor ac nisl fermentum congue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis lacinia turpis et ligula pharetra dignissim. Cras urna nunc, sodales eget laoreet ut, venenatis non ante. Morbi sapien ante, sagittis eget lobortis eu, tincidunt non purus. Integer mi nisl, condimentum nec fermentum quis, interdum a justo. In hac habitasse platea dictumst. Nulla et magna tortor, et viverra sapien. Aliquam dolor justo, vehicula vitae posuere et, euismod dictum ipsum. Vestibulum sed arcu purus. Nullam vehicula scelerisque sapien, in blandit mauris tristique ut. In ligula lectus, viverra eget venenatis eu, viverra vitae leo.
+        </p><p>
+        Cras vel felis eu quam placerat volutpat non in augue. Integer ornare dignissim tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam elit, semper id fermentum eu, commodo in nibh. Donec laoreet sem eros. Donec est turpis, aliquet a ullamcorper sed, commodo vel enim. Curabitur eget justo erat, at tincidunt lectus. In ut quam in libero molestie euismod. Etiam pharetra turpis non ante fermentum vel porttitor ligula consectetur. Morbi commodo justo in nisi rhoncus tincidunt. Morbi consectetur faucibus tincidunt. Phasellus neque ligula, adipiscing et ultrices in, interdum cursus nisi. Suspendisse quis diam turpis. Aenean condimentum scelerisque nisi vitae posuere. Sed adipiscing nulla eget justo euismod laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p><p>
+        Aliquam in turpis sed mi pretium interdum. Nam sit amet lobortis sapien. Nunc pellentesque convallis consectetur. Proin nisi lacus, imperdiet sed accumsan et, vehicula nec lorem. Duis quam nisi, rhoncus a pharetra posuere, mattis vel velit. Nulla sed sapien nisl. Nunc rutrum, libero at iaculis feugiat, enim purus rhoncus lorem, vel convallis sem diam eget sapien. Praesent adipiscing tristique neque id aliquet. Etiam ut mi quam, vitae elementum lacus. Vivamus non justo in elit venenatis gravida sed vitae augue. In eu magna vestibulum arcu hendrerit accumsan.
+        </p>
+
+        <footer>
+          &copy; 2012 Co-op Cabs
+        </footer>
+      </article>
+
+      <a href="#" id="toggle-main-body"></a>
+    </section>
+
+    <section id="hidden-left">
+      <h1>Company Name</h1>
+      <ul>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+      <br>
+      <h2>Call Us</h2>
+      <a href="#">(123) 456-6789</a>
+    </section>
+
+    <section id="hidden-right">
+      <p>
+      Cras vel felis eu quam placerat volutpat non in augue. Integer ornare dignissim tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam elit, semper id fermentum eu, commodo in nibh. Donec laoreet sem eros. Donec est turpis, aliquet a ullamcorper sed, commodo vel enim. Curabitur eget justo erat, at tincidunt lectus. In ut quam in libero molestie euismod. Etiam pharetra turpis non ante fermentum vel porttitor ligula consectetur. Morbi commodo justo in nisi rhoncus tincidunt. Morbi consectetur faucibus tincidunt. Phasellus neque ligula, adipiscing et ultrices in, interdum cursus nisi. Suspendisse quis diam turpis. Aenean condimentum scelerisque nisi vitae posuere. Sed adipiscing nulla eget justo euismod laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p><p>
+      Aliquam in turpis sed mi pretium interdum. Nam sit amet lobortis sapien. Nunc pellentesque convallis consectetur. Proin nisi lacus, imperdiet sed accumsan et, vehicula nec lorem. Duis quam nisi, rhoncus a pharetra posuere, mattis vel velit. Nulla sed sapien nisl. Nunc rutrum, libero at iaculis feugiat, enim purus rhoncus lorem, vel convallis sem diam eget sapien. Praesent adipiscing tristique neque id aliquet. Etiam ut mi quam, vitae elementum lacus. Vivamus non justo in elit venenatis gravida sed vitae augue. In eu magna vestibulum arcu hendrerit accumsan.
+      </p>
+    </section>
+
+    <script src="javascripts/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $('#toggle-left').click(function() {
+        if ($('body').hasClass('left-menu')) {
+          $('body').removeClass('left-menu');
+          $('#toggle-main-body').removeClass('visible');
+        } else {
+          $('body').addClass('left-menu');
+          $('#toggle-main-body').addClass('visible');
+        }
+      });
+      $('#toggle-right').click(function() {
+        if ($('body').hasClass('right-menu')) {
+          $('body').removeClass('right-menu');
+          $('#toggle-main-body').removeClass('visible');
+        } else {
+          $('body').addClass('right-menu');
+          $('#toggle-main-body').addClass('visible');
+        }
+      });
+      $('#toggle-main-body').click(function() {
+        $('body').removeClass('left-menu');
+        $('body').removeClass('right-menu');
+        $('#toggle-main-body').removeClass('visible');
+      });
+
+    </script>
+  </body>
+</html>

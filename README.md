@@ -57,3 +57,13 @@ used "overflow-x: hidden" on the body to prevent horizontal scrolling when the c
 gets shoved over while maintaining the main scrollbar to use for moving the content
 up and down, however this doesn't allow for scrolling in the menu area which may be
 an issue if the menu gets vertically taller than the viewport.
+
+### Double Mobile Menu
+
+![Double Mobile Menu Screenshot](http://robmclarty.com/screenshots/mobile-menu-double.png)
+
+An improvement over the original mobile menu template in that it incorporates some
+simple icons to click on in the main, fixed menu and an overlay link which dims the 
+main content so that you can click anywhere on the main content area to get back to it. 
+This one also includes a hidden menu on either side of the main content in case you 
+need extra functionality there.
