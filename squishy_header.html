@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Squishy Header Template</title>
+    <link href="stylesheets/normalize.css" media="all" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      h1 {
+        margin: 0;
+      }
+      #global-header,
+      #section-header {
+        position: relative;
+      }
+      #global-header .title-strip,
+      #section-header .title-strip {
+        padding: 25px 40px;
+      }
+      #global-header nav,
+      #section-header nav {
+        padding: 10px 40px;
+        background-color: #eee;
+      }
+      #global-header ul,
+      #section-header ul {
+        list-style: none;
+        font-size: 0;
+        padding: 0;
+      }
+      #global-header ul li,
+      #section-header ul li {
+        display: inline-block;
+      }
+      #global-header ul li a,
+      #section-header ul li a {
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+      }
+
+      #global-header {
+        background-color: #ddd;
+      }
+      #section-header {
+        background-color: #aaa;
+      }
+
+      .title-strip a.back-to-top {
+        position: absolute;
+        top: 10px;
+        right: 40px;
+      }
+
+      #section-header.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      #section-header.fixed .title-strip {
+        padding: 5px 40px;
+      }
+
+      #main-body {
+        padding: 40px;
+      }
+
+    </style>    
+  </head>
+  <body>
+    <header>
+      <div id="global-header">
+        <div class="title-strip">
+          <h1>Website Name</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Menu Item 1</a></li>
+            <li><a href="#">Menu Item 2</a></li>
+            <li><a href="#">Menu Item 3</a></li>
+            <li><a href="#">Menu Item 4</a></li>
+            <li><a href="#">Menu Item 5</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div id="section-header">
+        <div class="title-strip compact">
+          <h1>Section Name</h1>
+          <a href="#" class="back-to-top">Top</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">SubMenu 1</a></li>
+            <li><a href="#">SubMenu 2</a></li>
+            <li><a href="#">SubMenu 3</a></li>
+            <li><a href="#">SubMenu 4</a></li>
+            <li><a href="#">SubMenu 5</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main-body">
+      <h1>Page Name</h1>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis rutrum vestibulum. Maecenas eu velit nec risus aliquet tincidunt ac sit amet sem. Aliquam erat volutpat. Sed placerat nisi risus. Donec at tellus arcu. Proin dapibus ullamcorper commodo. In eget magna non erat euismod convallis.
+      </p><p>
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce nisl nisi, elementum non elementum in, pharetra a ipsum. Morbi egestas dolor ac nisl fermentum congue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis lacinia turpis et ligula pharetra dignissim. Cras urna nunc, sodales eget laoreet ut, venenatis non ante. Morbi sapien ante, sagittis eget lobortis eu, tincidunt non purus. Integer mi nisl, condimentum nec fermentum quis, interdum a justo. In hac habitasse platea dictumst. Nulla et magna tortor, et viverra sapien. Aliquam dolor justo, vehicula vitae posuere et, euismod dictum ipsum. Vestibulum sed arcu purus. Nullam vehicula scelerisque sapien, in blandit mauris tristique ut. In ligula lectus, viverra eget venenatis eu, viverra vitae leo.
+      </p><p>
+      Cras vel felis eu quam placerat volutpat non in augue. Integer ornare dignissim tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam elit, semper id fermentum eu, commodo in nibh. Donec laoreet sem eros. Donec est turpis, aliquet a ullamcorper sed, commodo vel enim. Curabitur eget justo erat, at tincidunt lectus. In ut quam in libero molestie euismod. Etiam pharetra turpis non ante fermentum vel porttitor ligula consectetur. Morbi commodo justo in nisi rhoncus tincidunt. Morbi consectetur faucibus tincidunt. Phasellus neque ligula, adipiscing et ultrices in, interdum cursus nisi. Suspendisse quis diam turpis. Aenean condimentum scelerisque nisi vitae posuere. Sed adipiscing nulla eget justo euismod laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p><p>
+      Aliquam in turpis sed mi pretium interdum. Nam sit amet lobortis sapien. Nunc pellentesque convallis consectetur. Proin nisi lacus, imperdiet sed accumsan et, vehicula nec lorem. Duis quam nisi, rhoncus a pharetra posuere, mattis vel velit. Nulla sed sapien nisl. Nunc rutrum, libero at iaculis feugiat, enim purus rhoncus lorem, vel convallis sem diam eget sapien. Praesent adipiscing tristique neque id aliquet. Etiam ut mi quam, vitae elementum lacus. Vivamus non justo in elit venenatis gravida sed vitae augue. In eu magna vestibulum arcu hendrerit accumsan.
+      </p>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis rutrum vestibulum. Maecenas eu velit nec risus aliquet tincidunt ac sit amet sem. Aliquam erat volutpat. Sed placerat nisi risus. Donec at tellus arcu. Proin dapibus ullamcorper commodo. In eget magna non erat euismod convallis.
+      </p><p>
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce nisl nisi, elementum non elementum in, pharetra a ipsum. Morbi egestas dolor ac nisl fermentum congue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis lacinia turpis et ligula pharetra dignissim. Cras urna nunc, sodales eget laoreet ut, venenatis non ante. Morbi sapien ante, sagittis eget lobortis eu, tincidunt non purus. Integer mi nisl, condimentum nec fermentum quis, interdum a justo. In hac habitasse platea dictumst. Nulla et magna tortor, et viverra sapien. Aliquam dolor justo, vehicula vitae posuere et, euismod dictum ipsum. Vestibulum sed arcu purus. Nullam vehicula scelerisque sapien, in blandit mauris tristique ut. In ligula lectus, viverra eget venenatis eu, viverra vitae leo.
+      </p><p>
+      Cras vel felis eu quam placerat volutpat non in augue. Integer ornare dignissim tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quam elit, semper id fermentum eu, commodo in nibh. Donec laoreet sem eros. Donec est turpis, aliquet a ullamcorper sed, commodo vel enim. Curabitur eget justo erat, at tincidunt lectus. In ut quam in libero molestie euismod. Etiam pharetra turpis non ante fermentum vel porttitor ligula consectetur. Morbi commodo justo in nisi rhoncus tincidunt. Morbi consectetur faucibus tincidunt. Phasellus neque ligula, adipiscing et ultrices in, interdum cursus nisi. Suspendisse quis diam turpis. Aenean condimentum scelerisque nisi vitae posuere. Sed adipiscing nulla eget justo euismod laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p><p>
+      Aliquam in turpis sed mi pretium interdum. Nam sit amet lobortis sapien. Nunc pellentesque convallis consectetur. Proin nisi lacus, imperdiet sed accumsan et, vehicula nec lorem. Duis quam nisi, rhoncus a pharetra posuere, mattis vel velit. Nulla sed sapien nisl. Nunc rutrum, libero at iaculis feugiat, enim purus rhoncus lorem, vel convallis sem diam eget sapien. Praesent adipiscing tristique neque id aliquet. Etiam ut mi quam, vitae elementum lacus. Vivamus non justo in elit venenatis gravida sed vitae augue. In eu magna vestibulum arcu hendrerit accumsan.
+      </p>
+    </section>
+
+    <script src="javascripts/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function() {
+        $(window).bind('scroll', function(e) {
+          var globalHeaderHeight = $('#global-header').height();
+          var y = $(this).scrollTop();
+          if (y >= globalHeaderHeight) {
+            $('#section-header').addClass('fixed');
+            var sectionHeaderHeight = $('#section-header').height();
+            $('#main-body').css("margin-top", sectionHeaderHeight + "px");
+          } else {
+            $('#section-header').removeClass('fixed');
+            $('#main-body').css("margin-top", "0");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
