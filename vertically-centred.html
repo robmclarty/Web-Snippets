@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vertically Centred</title>
+    <link href="stylesheets/normalize.css" media="all" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      ul li {
+        margin: 0;
+        padding: 0;
+      }
+      a.post {
+        display: block;
+        padding: 40px;
+        text-decoration: none;
+        color: #000;
+      }
+      a.post:hover {
+        background-color: #eee;
+      }
+      a.post .thumbnail {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100px;
+      }
+      a.post .thumbnail img {
+        background-size: cover;
+        background-color: #333;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+      a.post .description {
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 40px;
+      }
+      a.post .description h1 {
+        margin: 0;
+      }
+      a.post .description p {
+        margin: 0;
+      }
+    </style>    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a class="post" href="#">
+          <div class="thumbnail"><img src="images/fullscreen_background_resize_photo.jpg"></div>
+          <div class="description">
+            <h1>Header Example</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id turpis id nisl tristique tempor. Sed eleifend condimentum mollis.
+            </p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="post" href="#">
+          <div class="thumbnail"><img src="images/fullscreen_background_resize_photo.jpg"></div>
+          <div class="description">
+            <h1>Another Header Example</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="post" href="#">
+          <div class="thumbnail"><img src="images/fullscreen_background_resize_photo.jpg"></div>
+          <div class="description">
+            <h1>Yet Another Really Long Header Example That Wraps on Multiple Lines</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id turpis id nisl tristique tempor. Sed eleifend condimentum mollis.
+            </p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="post" href="#">
+          <div class="thumbnail"><img src="images/fullscreen_background_resize_photo.jpg"></div>
+          <div class="description">
+            <h1>Last Header Example</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id turpis id nisl tristique tempor. Sed eleifend condimentum mollis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id turpis id nisl tristique tempor. Sed eleifend condimentum mollis.
+            </p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>
